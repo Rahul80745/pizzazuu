@@ -1,0 +1,25 @@
+<!-- <form action="">
+  <input type="text" name="pid" placeholder="ID" [(ngModel)]="pid">
+  <input type="text" name="pname" placeholder="NAME" [(ngModel)]="pname">
+  <input type="text" name="pprice" placeholder="PRICE" [(ngModel)]="pprice">
+  <input type="text" name="pimage" placeholder="IMAGE URL" [(ngModel)]="pimage">
+
+  <button type="submit" (click)="submit()">submit</button>
+
+</form> -->
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>PRICE</th>
+    <th>IMAGE</th>
+  </tr>
+  <tr *ngFor="let items of products">
+    <td>{{items.productId}}</td>
+    <td>{{items.productName}}</td>
+    <td>{{items.productPrice}}</td>
+    <td><img [src]="items.productImage" alt="" width="100px" height="100px"></td>
+    <td><button (click)="submit(items)">add</button></td>
+  </tr>
+</table>

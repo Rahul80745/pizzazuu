@@ -1,0 +1,30 @@
+<div class="container-fluid align-items-center">
+  <div >
+
+      <table class="container-fluid">
+        <tr class="col-sm-auto">
+          <th class="text-center">ID</th>
+          <th class="text-center">NAME</th>
+          <th class="text-center">PRICE</th>
+          <th class="text-center">IMAGE</th>
+          <th class="text-center">Quantity</th>
+          <th class="text-center">Remove</th>
+        </tr>
+<div class="linehr"></div>
+        <tr *ngFor="let items of products2" class="col-sm-auto">
+          <td class="text-center">{{items.productId}}</td>
+          <td class="text-center">{{items.productName}}</td>
+          <td class="text-center">{{items.productPrice}}</td>
+          <td class="text-center"><img [src]="items.productImage" alt="" style="width:100px ; height: 80px; border-radius: 10%;"></td>
+          <td class="text-center"><span class="pluss" (click)="inc(items)"> <i class="fa fa-plus"></i> </span> {{items.productQnt}} <span class="pluss" (click)="del(items)"> <i class="fa-sharp fa fa-minus"></i> </span></td>
+          <td class="text-center"><button (click)="delete(items)"><i class="fa-sharp fa fa-trash fa-2x"></i></button></td>
+        </tr>
+
+      </table>
+
+      </div>
+  </div>
+
+
+
+

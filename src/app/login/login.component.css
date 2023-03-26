@@ -1,0 +1,94 @@
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:url(/assets/img4.jpg);
+  background-color: rgba(0,0,0,0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+
+
+
+}
+
+.in5{
+  max-width: 300px;
+  padding: 10px;
+
+
+
+}
+
+@keyframes bounceinY {
+  0% {
+    opacity: 0;
+    transform : 'translate3d(0, -3000px, 0)';
+    offset: 0,
+  }
+25%{
+    opacity: 1;
+    transform: 'translate3d(0, 25px, 0)';
+    offset: 0.6,
+}
+50%{ opacity: 1;transform: 'translate3d(0, -10px, 0)'; offset : 0.75 }
+75%{ opacity: 1;transform: 'translate3d(0, 5px, 0)'; offset: 0.9 }
+100%{ opacity: 1; transform: 'none'; offset: 1 }
+
+}
+
+@keyframes backInDown {
+  0% {
+    transform: translateY(-1200px) scale(.7);
+    opacity: .7;
+  }
+
+  80% {
+    transform: translateY(0px) scale(.7);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+label{
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.main2{
+  min-width: 200px;
+ background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: 5px 10px 30px 5px black;
+
+
+
+}
+input{
+  min-width: 300px;
+  padding: 2.5% 0% ;
+}
+button{
+  padding: 7px 20px;
+  margin: 11%;
+}
+
+/* .form1{
+  padding: 20px;
+  border: 1px solid grey;
+  max-width: 400px;
+}
+input{
+  padding: 6px 40px;
+  margin: 10px;
+} */
+
+

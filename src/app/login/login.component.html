@@ -1,0 +1,41 @@
+<div id="main">
+  <div class="main2">
+    <div class="container-fluid">
+      <div><img src="assets/pizza.png" class="in5"></div>
+
+
+
+      <form action="" name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm">
+        <div class="form-group">
+
+          <p><label for="username">Username</label></p>
+          <input type="text" name="username" id="" [(ngModel)]="username" #uname="ngModel" pattern="[a-z A-Z]{5,}"
+            placeholder="@username" title="pls enter 5 or more chars" required>
+
+          <label for="" *ngIf="f.submitted && !uname.valid">username</label>
+        </div>
+        <div class="form-group">
+          <p><label for="password">Password</label></p>
+          <input type="password" placeholder="Password" name="password" id="" [(ngModel)]="password" #pwd="ngModel"
+            required>
+        </div>
+        <div>
+          <div class="but1">
+            <button type="submit" class="btn btn-primary" [disabled]="!f.form.valid">login</button>
+            <button type="reset" class="btn btn-danger">cancel</button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<router-outlet></router-outlet>

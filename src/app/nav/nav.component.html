@@ -1,0 +1,75 @@
+<!-- <div class="intro">
+  <img src="assets/intro1.jpg" alt="" class="in1">
+  <img src="assets/intro2.png" alt="" class="in2">
+
+  <img src="assets/png.monster-862.webp" alt="" class="in4">
+  <img src="assets/pizza.png" alt="" class="in5">
+  <h4 class="int1">Taste The Best Pizza</h4>
+</div> -->
+
+<div class="containter1  bg-warning">
+  <div class="bg-warning d-flex flex-wrap justify-content-between">
+
+    <a><img src="assets/pizza.png" style="max-width: 150px; max-height: 80px;" class="p-3" alt=""></a>
+    <a><img src="assets/pizzagif.gif" style="max-width: 100px; max-height: 80px;"></a>
+    <a class="text-decoration-none text-light p-3">
+      <h4 style="display: inline;">Welcome {{username}}</h4>
+    </a>
+
+
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 bg-dark sticky-top">
+      <div class="d-flex flex-sm-column flex-row flex-nowrap bg-dark align-items-center sticky-top">
+
+        <ul
+          class="nav nav-pills  nav-flush flex-sm-column flex-row justify-content-spacebetween flex-wrap mb-auto mx-auto text-center align-items-center">
+          <li class="nav-item">
+            <a routerLink="/user/home" class="d-block p-3 link-warning acti text-light text-decoration-none" title=""
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+              Home<i class="bi-bootstrap fs-1"></i>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a routerLink="/user/products" class="nav-link text-light link-warning py-3 px-2" title=""
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+              Products <i class="bi-house fs-1"></i>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/user/menu" class="nav-link py-3 px-2 text-light link-warning" title=""
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+              Menu<i class="bi-speedometer2 fs-1"></i>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/user/deals" class="nav-link py-3 px-2 text-light link-warning" title=""
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+              Deals<i class="bi-table fs-1"></i>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/user/contact" class="nav-link py-3 px-2 text-light link-warning" title=""
+              data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+              Contact<i class="bi-heart fs-1"></i>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link py-3 px-2 mb-auto" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+              data-bs-original-title="Customers">
+              <button class="btn btn-outline-warning" (click)="logout()">LOGOUT</button>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="col-sm  min-vh-100">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

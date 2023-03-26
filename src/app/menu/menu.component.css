@@ -1,0 +1,58 @@
+th{
+
+
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-left: 1px solid grey;
+  margin: 30px;
+  padding:6px 0px;
+  margin: 400px;
+
+}
+table{
+  margin-top: 10px;
+}
+.linehr{
+
+
+  margin: 15px;
+
+}
+
+td{
+  border-left: 1px solid grey;
+  padding: 10px 0px;
+  border-spacing: 5px;
+  margin: 400px;
+
+}
+table tr:nth-child(even){
+  background-color: #e4f0ff;
+  color: #000000;
+}
+.pluss{
+  background-color: rgb(255, 128, 128);
+  border-radius: 40%;
+}
+i{
+  padding: 3%;
+}
+
+button{
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+
+}
+button:hover{
+   color: rgb(254, 105, 105);
+
+}
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 50px;
+    max-height: 50px;
+
+
+  }
+}

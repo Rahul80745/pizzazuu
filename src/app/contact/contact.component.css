@@ -1,0 +1,12 @@
+.info{
+  height: 100vh;
+
+width: 30vh;
+
+}
+
+.party{
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
